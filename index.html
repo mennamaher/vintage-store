@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store</title>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Salsa&display=swap" rel="stylesheet">
+
+
+    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row pt-4">
+            <h1 class=" text-center pb-5 display-3">Vintage Store</h1>
+
+            <div class=" txt col-lg-6 w-50 p-4 rounded-2 m-sm-auto">
+                <label class=" fw-semibold" for="">Product Name</label>
+                <input oninput="validName()" id="pName" class=" form-control" type="text">
+                <p id="validMsg" class=" alert alert-danger d-none"> add name more than 3 character</p>
+
+                <label class=" fw-semibold pt-2" for="">Product Price</label>
+                <input oninput="validPrice()" id="pPrice" class=" form-control" type="number">
+                <p id="validPrice" class=" alert alert-danger d-none">add number more than 2 digit</p>
+
+                <label class=" fw-semibold pt-2" for="">Product Category</label>
+                <input oninput="validCat()" id="pCat" class=" form-control" type="text">
+                <p id="validCat" class=" alert alert-danger d-none">add name more than a character</p>
+
+                <label class=" fw-semibold pt-2" for="">Product Image</label>
+                <input  id="pImg" class=" form-control" type="file">
+                <p id="validImg" class=" alert alert-danger d-none">image must be a valid one</p>
+
+                <button onclick="addProduct()" id="btnAdd" class=" frm but btn btn-outline-light border border-2 mt-3 text-dark">Add Product</button>
+                <button onclick="updateData()" id="btnUpdate" class=" d-none frm but btn btn-outline-light border border-2 mt-3 text-dark">update Product</button>
+            </div>
+
+            <div class=" col-lg-6 d-flex start-0">
+                <img src="images/5894697.jpg" class=" img-fluid w-75 m-auto" alt="">
+            </div>
+        </div>
+
+        <div class=" w-50 d-flex justify-content-center align-items-center m-auto">
+            <input oninput="search()" type="search" class=" in form-control" id="searchInput" placeholder="Enter name here">
+        </div>
+    <div class="container pt-5">
+        <div class="row g-3" id="content">
+            
+        </div>
+    </div>
+
+    </div>
+
+
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

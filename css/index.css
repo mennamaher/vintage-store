@@ -1,0 +1,33 @@
+.m{
+    height: 150px;
+}
+
+h1{
+    
+    background-image: linear-gradient(80deg, #5a3e0e,#948263);
+    font-family: "Pacifico", cursive;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-control:focus{
+    box-shadow: unset !important;
+    border-color:#5a3e0e ;
+    /* color: white !important; */
+
+}
+
+.frm{
+    background-color: #948263;
+    font-family: "Salsa", cursive;
+}
+.but{
+    width: 100%;
+}
+.txt{
+    color:#5a3e0e ;
+}
+
+.in{
+    border: 3px #948263 solid;
+}
